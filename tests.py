@@ -21,6 +21,9 @@ def test_unhashable():
     with pytest.raises(TypeError):
         Hash({5: []})
 
+def test_hashable_add():
+    Hash({5: ()})
+
 def test_subclass_repr():
     class MyHash(Hash):
         pass
