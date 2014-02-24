@@ -1,0 +1,8 @@
+language: python
+python:
+    - "3.3"
+install:
+    - "pip install ."
+    - "pip install -r build-requirements.txt"
+script:
+    - "py.test tests.py"
